@@ -7,7 +7,7 @@ with open(join(this_dir, "README.md"), encoding="utf-8") as file:
 
 
 setup(
-    name="promptapp",
+    name="promptcli",
     python_requires=">3.5",
     options={"bdist_wheel": {"universal": "1"}},
     version="0.0.1",
