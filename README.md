@@ -1,5 +1,5 @@
 [![Actions Status](https://github.com/raiyanyahya/prompt/workflows/Build%20Test/badge.svg)](https://github.com/raiyanyahya/prompt/actions) [![Actions Status](https://github.com/raiyanyahya/prompt/workflows/Package%20Release/badge.svg)](https://github.com/raiyanyahya/prompt/actions) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=raiyanyahya_prompt&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=raiyanyahya_prompt)[![CodeQL](https://github.com/raiyanyahya/prompt/workflows/CodeQL/badge.svg)](https://github.com/raiyanyahya/prompt/actions?query=workflow%3ACodeQL) [![](https://img.shields.io/badge/python-3.6+-blue.svg)] 
-[![PyPI version](https://badge.fury.io/py/prompt.png)](https://badge.fury.io/py/prompt)[![PyPI download month](https://img.shields.io/pypi/dm/prompt.svg)](https://pypi.python.org/pypi/promptapp/)[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)[![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
+[![PyPI version](https://badge.fury.io/py/prompt.png)](https://badge.fury.io/py/prompt)[![PyPI download month](https://img.shields.io/pypi/dm/prompt.svg)](https://pypi.python.org/pypi/promptcli/)[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)[![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 
 # Prompt 🥝 - A ChatGPT CLI
 
@@ -18,7 +18,7 @@ The application requires you to have an api token to query the OpenAI's ChatGPT 
 Install the prompt python package directly from pypi. 
 
 ```console
-  pip install promptapp
+  pip install promptcli
 ```
 I would recommend using pipx instead of pip to install cli applications on you machine.
 
