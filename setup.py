@@ -20,6 +20,6 @@ setup(
     author_email="raiyanyahyadeveloper@gmail.com",
     keywords=["cli", "developer tools", "productivity", "openai", "chatgpt"],
     packages=find_packages(),
-    install_requires=["click==8.1.3", "openai==0.27.0", "rich==12.5.1"],
+    install_requires=["click==8.1.3", "openai==0.27.0", "rich==13.3.1"],
     entry_points={"console_scripts": ["prompt=prompt.cli:cli"]},
 )
