@@ -10,7 +10,7 @@ setup(
     name="promptcli",
     python_requires=">3.5",
     options={"bdist_wheel": {"universal": "1"}},
-    version="0.0.1",
+    version="0.0.2",
     description="A command line application to help wrap the OpenAI ChatGPT api.",
     long_description=long_description,
     long_description_content_type="text/markdown",
