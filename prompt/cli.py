@@ -33,7 +33,7 @@ def cli(clear):
     session_data = []
     click.echo("💻 Session started. Enter 'exit' to end the session.")
     while True:
-        user_input = click.prompt("➡")
+        user_input = click.prompt("➡ ")
         session_data.append({"role": "user", "content": user_input})
         if user_input.lower() == "exit":
             break
