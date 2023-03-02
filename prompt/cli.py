@@ -25,7 +25,7 @@ def configure_openai():
 
 
 @click.group(invoke_without_command=True)
-@click.version_option(version="0.0.1")
+@click.version_option(version="0.0.2")
 @click.option('--clear', is_flag=True, help='🌊 Clear the context each round of chat')
 def cli(clear):
     """🥝 A command line application to interact with OpenAI's ChatGPT."""
