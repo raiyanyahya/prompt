@@ -31,7 +31,7 @@ def cli(clear):
     """🥝 A command line application to interact with OpenAI's ChatGPT."""
     configure_openai()
     session_data = []
-    click.echo("💻 Session started. Enter 'exit' to end the session.")
+    click.echo("🥝 Session started. Enter 'exit' to end the session.")
     while True:
         user_input = click.prompt("➡ ")
         session_data.append({"role": "user", "content": user_input})
