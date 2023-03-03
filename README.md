@@ -2,6 +2,8 @@
 
 # Prompt 🥝 - A ChatGPT CLI
 
+![](https://gifyu.com/images/demo.gif)
+
 `prompt` is designed to provide users a command-line interface for the ChatGPT API, which uses OpenAI's GPT language model to generate text based on user input.
 
 The application helps you start a `session` with ChatGPT so that the `context` is preserved and longer conversions with contexts are considered. The user's prompts and the responses are sent back to ChatGPT everytime.
