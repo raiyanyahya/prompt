@@ -28,7 +28,7 @@ def configure_openai():
 @click.version_option(version="1.0.2")
 @click.option('--clear', is_flag=True, help='🌊 Clear the context each round of chat')
 def cli(clear):
-    """🥝 A command line application to interact with OpenAI's ChatGPT."""
+    """ 🥝 A command line application to interact with OpenAI's ChatGPT."""
     configure_openai()
     session_data = []
     click.echo("🥝 Session started. Enter 'exit' to end the session.")
@@ -43,6 +43,7 @@ def cli(clear):
                     model="gpt-3.5-turbo", messages=session_data
                 )
                 print(completion["choices"][0]["message"]["content"])
+                print("")
                 session_data.append(
                     {
                         "role": "system",
