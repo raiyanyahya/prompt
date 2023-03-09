@@ -4,6 +4,7 @@ import openai
 from rich.progress import Console
 import json
 import readline
+
 console = Console()
 
 
@@ -26,9 +27,9 @@ def configure_openai():
 
 @click.group(invoke_without_command=True)
 @click.version_option(version="1.0.5")
-@click.option('--clear', is_flag=True, help='🌊 Clear the context each round of chat')
+@click.option("--clear", is_flag=True, help="🌊 Clear the context each round of chat")
 def cli(clear):
-    """ 🥝 A command line application to interact with OpenAI's ChatGPT."""
+    """🥝 A command line application to interact with OpenAI's ChatGPT."""
     configure_openai()
     session_data = []
     click.echo("")
@@ -57,7 +58,9 @@ def cli(clear):
             print("🔒 Authentication Failed. Try with a fresh API key.")
             break
         except Exception:
-            print("❌ Failed to get reply from chatGPT. Please try again with a different prompt or check your api key quota.")
+            print(
+                "❌ Failed to get reply from chatGPT. Please try again with a different prompt or check your api key quota."
+            )
             break
 
 
