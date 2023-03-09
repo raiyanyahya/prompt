@@ -3,7 +3,7 @@ from os import path, makedirs, getenv
 import openai
 from rich.progress import Console
 import json
-
+import readline
 console = Console()
 
 
@@ -25,7 +25,7 @@ def configure_openai():
 
 
 @click.group(invoke_without_command=True)
-@click.version_option(version="1.0.4")
+@click.version_option(version="1.0.5")
 @click.option('--clear', is_flag=True, help='🌊 Clear the context each round of chat')
 def cli(clear):
     """ 🥝 A command line application to interact with OpenAI's ChatGPT."""
