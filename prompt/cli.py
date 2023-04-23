@@ -26,9 +26,10 @@ def configure_openai():
 
 
 @click.group(invoke_without_command=True)
-@click.version_option(version="1.0.5")
+@click.version_option(version="2.0.0")
 @click.option("--clear", is_flag=True, help="🌊 Clear the context each round of chat")
-def cli(clear):
+@click.option("--model", default="gpt-3.5-turbo", help="🔄 The OpenAI model type.")
+def cli(clear,model):
     """🥝 A command line application to interact with OpenAI's ChatGPT."""
     configure_openai()
     session_data = []
@@ -42,7 +43,7 @@ def cli(clear):
         try:
             with console.status("Waiting for chatgpt...", spinner="dots8Bit"):
                 completion = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo", messages=session_data
+                    model=model, messages=session_data
                 )
                 print(completion["choices"][0]["message"]["content"])
                 print("")

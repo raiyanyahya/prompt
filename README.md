@@ -8,7 +8,7 @@
 
 The application helps you start a `session` with ChatGPT so that the `context` is preserved and longer conversions with contexts are considered. The user's prompts and the responses are sent back to ChatGPT everytime.
 
-The ChatGPT api usage depends on the number of tokens used and it is important that you use the tokens wisely. After a prompt has been answered the application will resend the last prompt and answer in the next prompt, this makes sure you can have a continued conversion with ChatGPT ` much like using ChatGPT in a single chat session `. This makes the token count larger and larger as you continue to chat. If you are not concerned with context use the `--clear` flag which will save your token usage.
+The ChatGPT api usage depends on the number of tokens used and it is important that you use the tokens wisely. After a prompt has been answered the application will resend the last prompt and answer in the next prompt, this makes sure you can have a continued conversion with ChatGPT ` much like using ChatGPT in a single chat session `. This makes the token count larger and larger as you continue to chat. If you are not concerned with context use the `--clear` flag which will save your token usage. Use the `model` option to add 
 
 I hope you find it useful.
 
@@ -36,6 +36,7 @@ Usage: prompt [OPTIONS] COMMAND [ARGS]...
 Options:
   --version     Show the version and exit.
   --clear    🌊 Clear the context each round of chat
+  --model    🔄 The OpenAI model type.
   --help        Show this message and exit.
 
 Commands:
