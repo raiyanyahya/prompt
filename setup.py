@@ -10,7 +10,7 @@ setup(
     name="promptcli",
     python_requires=">3.5",
     options={"bdist_wheel": {"universal": "1"}},
-    version="2.0.0",
+    version="2.1.0",
     description="A command line application to help wrap the OpenAI ChatGPT api.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,6 +20,6 @@ setup(
     author_email="raiyanyahyadeveloper@gmail.com",
     keywords=["cli", "developer tools", "productivity", "openai", "chatgpt"],
     packages=find_packages(),
-    install_requires=["click==8.1.3", "openai==0.27.4", "rich==13.3.4"],
+    install_requires=["click==8.1.3", "openai==0.27.8", "rich==13.4.1"],
     entry_points={"console_scripts": ["prompt=prompt.cli:cli"]},
 )
